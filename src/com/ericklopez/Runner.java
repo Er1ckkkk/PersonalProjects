@@ -1,6 +1,7 @@
 package com.ericklopez;
 
 import com.ericklopez.Calculators.Calculator;
+import com.ericklopez.Calculators.MortgageCalculator;
 
 import java.util.Scanner;
 
@@ -20,7 +21,8 @@ public class Runner {
 
 
     private enum Exercises{
-        CALCULATOR("Calculator", 1);
+        CALCULATOR("Calculator", 1),
+        MORTGAGE_CALCULATOR("Mortgage Calculator", 2);
 
 
         private String title;
@@ -46,6 +48,9 @@ public class Runner {
             case 1:
                 startCalculator();
                 break;
+            case 2:
+                startMortgageCalculator();
+                break;
 
         }
 
@@ -55,5 +60,10 @@ public class Runner {
     private static void startCalculator(){
         Calculator calculator = new Calculator();
         calculator.performCalculator();
+    }
+
+    private static void startMortgageCalculator(){
+        MortgageCalculator mortgageCalculator = new MortgageCalculator();
+        mortgageCalculator.performMortgageCalculator();
     }
 }
