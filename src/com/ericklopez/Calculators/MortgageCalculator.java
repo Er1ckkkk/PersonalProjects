@@ -57,7 +57,4 @@ public class MortgageCalculator {
         System.out.print("Mortgage: " + mortgageFormatted);
         System.exit(0);
     }
-
-
-
 }
