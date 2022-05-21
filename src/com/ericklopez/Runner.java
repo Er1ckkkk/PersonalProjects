@@ -2,6 +2,7 @@ package com.ericklopez;
 
 import com.ericklopez.Calculators.Calculator;
 import com.ericklopez.Calculators.MortgageCalculator;
+import com.ericklopez.Exercises.FizzBuzz;
 
 import java.util.Scanner;
 
@@ -22,7 +23,8 @@ public class Runner {
 
     private enum Exercises{
         CALCULATOR("Calculator", 1),
-        MORTGAGE_CALCULATOR("Mortgage Calculator", 2);
+        MORTGAGE_CALCULATOR("Mortgage Calculator", 2),
+        FIZZBUZZ("FizzBuzz",3);
 
 
         private String title;
@@ -51,6 +53,9 @@ public class Runner {
             case 2:
                 startMortgageCalculator();
                 break;
+            case 3:
+                startFizzBuzz();
+                break;
 
         }
 
@@ -65,5 +70,10 @@ public class Runner {
     private static void startMortgageCalculator(){
         MortgageCalculator mortgageCalculator = new MortgageCalculator();
         mortgageCalculator.performMortgageCalculator();
+    }
+
+    private static void startFizzBuzz(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        fizzBuzz.performFizzBuzz();
     }
 }
