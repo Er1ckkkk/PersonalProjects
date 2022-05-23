@@ -25,7 +25,7 @@ public class MortgageCalculator {
             System.out.print("Principle ($1k - $1M): ");
             principle = keyboard.nextInt();
             if( principle >= 1000 & principle <= 1_000_000)
-                break;
+                break; //if it breaks it leaves the while loop
             System.out.println("Enter a value between 1,000 and 1,000,000");
         }
 
