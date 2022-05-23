@@ -2,6 +2,7 @@ package com.ericklopez;
 
 import com.ericklopez.Calculators.Calculator;
 import com.ericklopez.Calculators.MortgageCalculator;
+import com.ericklopez.Exercises.BinarySearch;
 import com.ericklopez.Exercises.FizzBuzz;
 
 import java.util.Scanner;
@@ -24,7 +25,8 @@ public class Runner {
     private enum Exercises{
         CALCULATOR("Calculator", 1),
         MORTGAGE_CALCULATOR("Mortgage Calculator", 2),
-        FIZZBUZZ("FizzBuzz",3);
+        FIZZBUZZ("FizzBuzz",3),
+        BINARY_SEARCH("Binary Search", 4);
 
 
         private String title;
@@ -56,6 +58,9 @@ public class Runner {
             case 3:
                 startFizzBuzz();
                 break;
+            case 4:
+                startBinarySearch();
+                break;
 
         }
 
@@ -75,5 +80,9 @@ public class Runner {
     private static void startFizzBuzz(){
         FizzBuzz fizzBuzz = new FizzBuzz();
         fizzBuzz.performFizzBuzz();
+    }
+    private static void startBinarySearch(){
+        BinarySearch binarySearch = new BinarySearch();
+        binarySearch.performBinarySearch();
     }
 }
