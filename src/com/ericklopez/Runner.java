@@ -4,6 +4,7 @@ import com.ericklopez.Calculators.Calculator;
 import com.ericklopez.Calculators.MortgageCalculator;
 import com.ericklopez.Exercises.BinarySearch;
 import com.ericklopez.Exercises.FizzBuzz;
+import com.ericklopez.Exercises.LinearSearch;
 
 import java.util.Scanner;
 
@@ -26,7 +27,8 @@ public class Runner {
         CALCULATOR("Calculator", 1),
         MORTGAGE_CALCULATOR("Mortgage Calculator", 2),
         FIZZBUZZ("FizzBuzz",3),
-        BINARY_SEARCH("Binary Search", 4);
+        BINARY_SEARCH("Binary Search", 4),
+        LINEAR_SEARCH ("Linear Search", 5);
 
 
         private String title;
@@ -61,6 +63,9 @@ public class Runner {
             case 4:
                 startBinarySearch();
                 break;
+            case 5:
+                startLinearSearch();
+                break;
 
         }
 
@@ -84,5 +89,10 @@ public class Runner {
     private static void startBinarySearch(){
         BinarySearch binarySearch = new BinarySearch();
         binarySearch.performBinarySearch();
+    }
+
+    private static void startLinearSearch(){
+        LinearSearch linearSearch = new LinearSearch();
+        linearSearch.performLinearSearch();
     }
 }

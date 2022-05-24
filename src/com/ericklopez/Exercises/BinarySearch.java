@@ -36,7 +36,7 @@ public class BinarySearch {
 
     public void printIntro() {
         System.out.println("You are given a list of the following numbers: ");
-        System.out.println(" 1, 34, 93, 12, 4, 5, 93, 10");
+        System.out.println(" 1, 34, 97, 12, 4, 5, 93, 10");
         System.out.println("Next we will sort the array: ");
     }
 
