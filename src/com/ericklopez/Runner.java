@@ -4,6 +4,7 @@ import com.ericklopez.Calculators.Calculator;
 import com.ericklopez.Calculators.MortgageCalculator;
 import com.ericklopez.Exercises.BinarySearch;
 import com.ericklopez.Exercises.FizzBuzz;
+import com.ericklopez.Exercises.HeapSort;
 import com.ericklopez.Exercises.LinearSearch;
 
 import java.util.Scanner;
@@ -28,7 +29,8 @@ public class Runner {
         MORTGAGE_CALCULATOR("Mortgage Calculator", 2),
         FIZZBUZZ("FizzBuzz",3),
         BINARY_SEARCH("Binary Search", 4),
-        LINEAR_SEARCH ("Linear Search", 5);
+        LINEAR_SEARCH ("Linear Search", 5),
+        HEAP_SORT("Heap Sort", 6);
 
 
         private String title;
@@ -66,6 +68,9 @@ public class Runner {
             case 5:
                 startLinearSearch();
                 break;
+            case 6:
+                startHeapSort();
+                break;
 
         }
 
@@ -94,5 +99,10 @@ public class Runner {
     private static void startLinearSearch(){
         LinearSearch linearSearch = new LinearSearch();
         linearSearch.performLinearSearch();
+    }
+
+    private static void startHeapSort(){
+        HeapSort heapSort = new HeapSort();
+        heapSort.performHeapSort();
     }
 }
