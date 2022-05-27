@@ -6,6 +6,7 @@ import com.ericklopez.Exercises.BinarySearch;
 import com.ericklopez.Exercises.FizzBuzz;
 import com.ericklopez.Exercises.HeapSort;
 import com.ericklopez.Exercises.LinearSearch;
+import com.ericklopez.LeetCodeExercises.StepsToReduceNumber;
 
 import java.util.Scanner;
 
@@ -30,7 +31,8 @@ public class Runner {
         FIZZBUZZ("FizzBuzz",3),
         BINARY_SEARCH("Binary Search", 4),
         LINEAR_SEARCH ("Linear Search", 5),
-        HEAP_SORT("Heap Sort", 6);
+        HEAP_SORT("Heap Sort", 6),
+        STEPS_TO_REDUCE_NUMBER("Steps To Reduce A Number", 7);
 
 
         private String title;
@@ -71,6 +73,9 @@ public class Runner {
             case 6:
                 startHeapSort();
                 break;
+            case 7:
+                startStepsToReduceNumber();
+                break;
 
         }
 
@@ -104,5 +109,10 @@ public class Runner {
     private static void startHeapSort(){
         HeapSort heapSort = new HeapSort();
         heapSort.performHeapSort();
+    }
+
+    private static void startStepsToReduceNumber(){
+        StepsToReduceNumber stepsToReduceNumber = new StepsToReduceNumber();
+        stepsToReduceNumber.performStepsToReduceNumber();
     }
 }
