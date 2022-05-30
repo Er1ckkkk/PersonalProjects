@@ -18,8 +18,8 @@ public class TwoSum {
     */
     promptInput();
     String result = Arrays.toString(findSum(givenNumbers, sumToFind));
-        System.out.println(result);
-
+    System.out.println(result);
+    System.exit(0);
     }
 
     public void printIntro(){

@@ -8,6 +8,7 @@ import com.ericklopez.Exercises.HeapSort;
 import com.ericklopez.Exercises.LinearSearch;
 import com.ericklopez.LeetCodeExercises.StepsToReduceNumber;
 import com.ericklopez.LeetCodeExercises.TwoSum;
+import com.ericklopez.LeetCodeExercises.ValidParenthesis;
 
 import java.util.Scanner;
 
@@ -34,7 +35,8 @@ public class Runner {
         LINEAR_SEARCH ("Linear Search", 5),
         HEAP_SORT("Heap Sort", 6),
         STEPS_TO_REDUCE_NUMBER("Steps To Reduce A Number", 7),
-        TWO_SUM("Two Sum", 8);
+        TWO_SUM("Two Sum", 8),
+        VALID_PARENTHESIS("Valid Parenthesis", 9);
 
 
         private String title;
@@ -82,6 +84,10 @@ public class Runner {
             case 8:
                 startTwoSum();
                 break;
+
+            case 9:
+                startValidParenthesis();
+                break;
         }
 
 
@@ -124,5 +130,10 @@ public class Runner {
     private static void startTwoSum(){
         TwoSum twoSum = new TwoSum();
         twoSum.performTwoSum();
+    }
+
+    private static void startValidParenthesis(){
+        ValidParenthesis validParenthesis = new ValidParenthesis();
+        validParenthesis.performValidParenthesis();
     }
 }
