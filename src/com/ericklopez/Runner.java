@@ -6,6 +6,7 @@ import com.ericklopez.Exercises.BinarySearch;
 import com.ericklopez.Exercises.FizzBuzz;
 import com.ericklopez.Exercises.HeapSort;
 import com.ericklopez.Exercises.LinearSearch;
+import com.ericklopez.LeetCodeExercises.Palindrome;
 import com.ericklopez.LeetCodeExercises.StepsToReduceNumber;
 import com.ericklopez.LeetCodeExercises.TwoSum;
 import com.ericklopez.LeetCodeExercises.ValidParenthesis;
@@ -36,7 +37,8 @@ public class Runner {
         HEAP_SORT("Heap Sort", 6),
         STEPS_TO_REDUCE_NUMBER("Steps To Reduce A Number", 7),
         TWO_SUM("Two Sum", 8),
-        VALID_PARENTHESIS("Valid Parenthesis", 9);
+        VALID_PARENTHESIS("Valid Parenthesis", 9),
+        PALINDROME("Palindrome", 10);
 
 
         private String title;
@@ -88,6 +90,10 @@ public class Runner {
             case 9:
                 startValidParenthesis();
                 break;
+
+            case 10:
+                startPalindrome();
+                break;
         }
 
 
@@ -135,5 +141,10 @@ public class Runner {
     private static void startValidParenthesis(){
         ValidParenthesis validParenthesis = new ValidParenthesis();
         validParenthesis.performValidParenthesis();
+    }
+
+    private static void startPalindrome(){
+        Palindrome palindrome = new Palindrome();
+        palindrome.performPalindrome();
     }
 }
