@@ -6,10 +6,7 @@ import com.ericklopez.Exercises.BinarySearch;
 import com.ericklopez.Exercises.FizzBuzz;
 import com.ericklopez.Exercises.HeapSort;
 import com.ericklopez.Exercises.LinearSearch;
-import com.ericklopez.LeetCodeExercises.Palindrome;
-import com.ericklopez.LeetCodeExercises.StepsToReduceNumber;
-import com.ericklopez.LeetCodeExercises.TwoSum;
-import com.ericklopez.LeetCodeExercises.ValidParenthesis;
+import com.ericklopez.LeetCodeExercises.*;
 
 import java.util.Scanner;
 
@@ -38,7 +35,8 @@ public class Runner {
         STEPS_TO_REDUCE_NUMBER("Steps To Reduce A Number", 7),
         TWO_SUM("Two Sum", 8),
         VALID_PARENTHESIS("Valid Parenthesis", 9),
-        PALINDROME("Palindrome", 10);
+        PALINDROME("Palindrome", 10),
+        SQUARE_ROOT("Square Root", 11);
 
 
         private String title;
@@ -94,6 +92,10 @@ public class Runner {
             case 10:
                 startPalindrome();
                 break;
+
+            case 11:
+                startSquareRoot();
+                break;
         }
 
 
@@ -146,5 +148,10 @@ public class Runner {
     private static void startPalindrome(){
         Palindrome palindrome = new Palindrome();
         palindrome.performPalindrome();
+    }
+
+    private static void startSquareRoot(){
+        SquareRoot squareRoot = new SquareRoot();
+        squareRoot.performSquareRoot();
     }
 }
