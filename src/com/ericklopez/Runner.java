@@ -36,7 +36,8 @@ public class Runner {
         TWO_SUM("Two Sum", 8),
         VALID_PARENTHESIS("Valid Parenthesis", 9),
         PALINDROME("Palindrome", 10),
-        SQUARE_ROOT("Square Root", 11);
+        SQUARE_ROOT("Square Root", 11),
+        ROMAN_TO_INTEGER("Roman To Integer", 12);
 
 
         private String title;
@@ -96,6 +97,10 @@ public class Runner {
             case 11:
                 startSquareRoot();
                 break;
+
+            case 12:
+                startRomanToInteger();
+                break;
         }
 
 
@@ -153,5 +158,10 @@ public class Runner {
     private static void startSquareRoot(){
         SquareRoot squareRoot = new SquareRoot();
         squareRoot.performSquareRoot();
+    }
+
+    private static void startRomanToInteger(){
+        RomanToInteger romanToInteger = new RomanToInteger();
+        romanToInteger.performRomanToInteger();
     }
 }
