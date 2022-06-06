@@ -2,10 +2,7 @@ package com.ericklopez;
 
 import com.ericklopez.Calculators.Calculator;
 import com.ericklopez.Calculators.MortgageCalculator;
-import com.ericklopez.Exercises.BinarySearch;
-import com.ericklopez.Exercises.FizzBuzz;
-import com.ericklopez.Exercises.HeapSort;
-import com.ericklopez.Exercises.LinearSearch;
+import com.ericklopez.Exercises.*;
 import com.ericklopez.LeetCodeExercises.*;
 
 import java.util.Scanner;
@@ -37,7 +34,9 @@ public class Runner {
         VALID_PARENTHESIS("Valid Parenthesis", 9),
         PALINDROME("Palindrome", 10),
         SQUARE_ROOT("Square Root", 11),
-        ROMAN_TO_INTEGER("Roman To Integer", 12);
+        ROMAN_TO_INTEGER("Roman To Integer", 12),
+        MERGE_TWO_SORTED_LISTS("Merge Two Sorted Lists", 13),
+        LINKED_LIST("Linked List", 14);
 
 
         private String title;
@@ -101,6 +100,14 @@ public class Runner {
             case 12:
                 startRomanToInteger();
                 break;
+
+            case 13:
+                startMergeTwoSortedLists();
+                break;
+
+            case 14:
+                startLinkedList();
+                break;
         }
 
 
@@ -163,5 +170,15 @@ public class Runner {
     private static void startRomanToInteger(){
         RomanToInteger romanToInteger = new RomanToInteger();
         romanToInteger.performRomanToInteger();
+    }
+
+    private static void startMergeTwoSortedLists(){
+        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+        mergeTwoSortedLists.performMergeTwoSortedLists();
+    }
+
+    private static void startLinkedList(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.performLinkedList();
     }
 }
