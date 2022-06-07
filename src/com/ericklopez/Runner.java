@@ -36,7 +36,8 @@ public class Runner {
         SQUARE_ROOT("Square Root", 11),
         ROMAN_TO_INTEGER("Roman To Integer", 12),
         MERGE_TWO_SORTED_LISTS("Merge Two Sorted Lists", 13),
-        LINKED_LIST("Linked List", 14);
+        LINKED_LIST("Linked List", 14),
+        REMOVE_ELEMENT("Remove Element", 15);
 
 
         private String title;
@@ -107,6 +108,10 @@ public class Runner {
 
             case 14:
                 startLinkedList();
+                break;
+
+            case 15:
+                startRemoveElement();
                 break;
         }
 
@@ -180,5 +185,10 @@ public class Runner {
     private static void startLinkedList(){
         LinkedList linkedList = new LinkedList();
         linkedList.performLinkedList();
+    }
+
+    private static void startRemoveElement(){
+        RemoveElement removeElement = new RemoveElement();
+        removeElement.performRemoveElement();
     }
 }
