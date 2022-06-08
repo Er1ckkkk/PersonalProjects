@@ -37,7 +37,8 @@ public class Runner {
         ROMAN_TO_INTEGER("Roman To Integer", 12),
         MERGE_TWO_SORTED_LISTS("Merge Two Sorted Lists", 13),
         LINKED_LIST("Linked List", 14),
-        REMOVE_ELEMENT("Remove Element", 15);
+        REMOVE_ELEMENT("Remove Element", 15),
+        REMOVE_PALINDROMIC_SUBSEQUENCES("Remove Palindromic Subsequences", 16);
 
 
         private String title;
@@ -112,6 +113,10 @@ public class Runner {
 
             case 15:
                 startRemoveElement();
+                break;
+
+            case 16:
+                startRemovePalindromeSubsequences();
                 break;
         }
 
@@ -190,5 +195,10 @@ public class Runner {
     private static void startRemoveElement(){
         RemoveElement removeElement = new RemoveElement();
         removeElement.performRemoveElement();
+    }
+
+    private static void startRemovePalindromeSubsequences(){
+        RemovePalindromicSubsequences removePalindromicSubsequences = new RemovePalindromicSubsequences();
+        removePalindromicSubsequences.performRemovePalindromeSubsequences();
     }
 }
