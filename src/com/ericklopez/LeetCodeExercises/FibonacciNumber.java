@@ -11,6 +11,7 @@ public class FibonacciNumber {
         int input = keyboard.nextInt();
         int result = doMath(input);
         System.out.println(result);
+        System.exit(0);
     }
 
     public int doMath(int input){
