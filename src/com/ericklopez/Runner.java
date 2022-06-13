@@ -96,7 +96,8 @@ public class Runner {
         SQUARE_ROOT("Square Root", 7),
         STEPS_TO_REDUCE_NUMBER("Steps To Reduce A Number", 8),
         TWO_SUM("Two Sum", 9),
-        VALID_PARENTHESIS("Valid Parenthesis", 10);
+        VALID_PARENTHESIS("Valid Parenthesis", 10),
+        FIBONACCI_NUMBER("Fibonacci Number", 11);
 
         private String title;
         private int option;
@@ -211,6 +212,11 @@ public class Runner {
                 startValidParenthesis();
                 break;
 
+            case 11:
+                startFibonacciNumber();
+                break;
+
+
         }
     }
 
@@ -298,4 +304,11 @@ public class Runner {
         CoinChange coinChange = new CoinChange();
         coinChange.performCoinChange();
     }
+
+    private static void startFibonacciNumber(){
+        FibonacciNumber fibonacciNumber = new FibonacciNumber();
+        fibonacciNumber.performFibonacciNumber();
+    }
+
+
 }
